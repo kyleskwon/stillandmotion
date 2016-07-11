@@ -22,6 +22,21 @@ stillandmotion.config(['$stateProvider', '$locationProvider', function($statePro
             url: '/malaysia',
             controller: 'MalaysiaCtrl',
             templateUrl: '/templates/malaysia.html'
+        })
+        .state('thailand', {
+            url: '/thailand',
+            controller: 'ThailandCtrl',
+            templateUrl: '/templates/thailand.html'
+        })
+        .state('cambodia', {
+            url: '/cambodia',
+            controller: 'CambodiaCtrl',
+            templateUrl: '/templates/cambodia.html'
+        })
+        .state('indonesia', {
+            url: '/indonesia',
+            controller: 'IndonesiaCtrl',
+            templateUrl: '/templates/indonesia.html'
         });
 }]);
 
@@ -34,5 +49,17 @@ stillandmotion.controller("PhilippinesCtrl", function($scope) {
 });
 
 stillandmotion.controller("MalaysiaCtrl", function($scope) {
+    
+});
+
+stillandmotion.controller("ThailandCtrl", function($scope) {
+    
+});
+
+stillandmotion.controller("CambodiaCtrl", function($scope) {
+    
+});
+
+stillandmotion.controller("IndonesiaCtrl", function($scope) {
     
 });
