@@ -22,3 +22,11 @@ img:hover {
     width: 355px;
     margin: 5px;
 }
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}

@@ -9,7 +9,7 @@ stillandmotion.config(['$stateProvider', '$locationProvider', function($statePro
     
     $stateProvider
         .state('home', {
-            url: '/',
+            url: '/home',
             controller: 'HomeCtrl',
             templateUrl: '/templates/home.html'
         })
