@@ -8,25 +8,7 @@ img:hover {
     box-shadow: 5px 0px 40px black;
 }
 
-.one {
-    width: 1135px;
-    margin: 5px;
-}
-
-.two {
-    width: 550px;
-    margin: 5px;
-}
-
-.three {
-    width: 355px;
-    margin: 5px;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
+img {
+    width: 100%;
+    margin: 10px;
 }
