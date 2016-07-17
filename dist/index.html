@@ -8,25 +8,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-<div class="container-fluid" ng-controller="HomeCtrl">
-    <div class="container">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" ui-sref="home">stillandmotion</a>
-                    <a class="navbar-brand" ui-sref="philippines">philippines</a>
-                    <a class="navbar-brand" ui-sref="malaysia">malaysia</a>
-                    <a class="navbar-brand" ui-sref="thailand">thailand</a>
-                    <a class="navbar-brand" ui-sref="cambodia">cambodia</a>
-                    <a class="navbar-brand" ui-sref="indonesia">indonesia</a>
-                </div>
-            </div>
-        </nav>
+    
+<nav class="navbar navbar-inverse">
+  <div class="container" ng-controller="HomeCtrl">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" ui-sref="home">stillandmotion</a>
     </div>
-</div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ui-sref="philippines">philippines</a></li>
+        <li><a ui-sref="malaysia">malaysia</a></li>
+        <li><a ui-sref="thailand">thailand</a></li>
+        <li><a ui-sref="cambodia">cambodia</a></li>
+        <li><a ui-sref="indonesia">indonesia</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
     
 <ui-view></ui-view>
     <script src="/scripts/app.js"></script>
